@@ -39,7 +39,7 @@ class FrontendController extends Controller{
     public function events()
     { 
         $events = Post::where('cat_id', 1)->orderBy('id', 'desc')->get(); 
-        return view('frontend.home-page', compact('events'));
+        return view('frontend.events', compact('events'));
     }
 
 

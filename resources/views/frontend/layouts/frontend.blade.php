@@ -3,8 +3,7 @@
 @include('frontend.layouts.partials.head._head')
 <body> 
 <div class="super_container">
-    <header class="header">
-			
+    <header class="header">			
 		<!-- Top Bar -->
 		<div class="top_bar">
 			<div class="top_bar_container">
@@ -91,9 +90,7 @@
 			</div>			
 		</div>			
 	</header>
-
 	<!-- Menu -->
-
 	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
 		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
 		<div class="search">
@@ -116,7 +113,6 @@
 			</ul>
 		</nav>
 	</div>
-
     @yield('content')
 	@include('frontend.layouts.partials.head._footer')
 </div>
