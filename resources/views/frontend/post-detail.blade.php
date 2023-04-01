@@ -35,7 +35,7 @@
 							</ul>
 						</div>
 						<div class="blog_image"><img src="{{ url('images/news/image/'.$postDetails->image) }}" alt=""></div>
-						{{ $postDetails->descrip }}
+						<p>{{ $postDetails->descrip }}</p>
 					</div>  
 				</div>
 				@endif

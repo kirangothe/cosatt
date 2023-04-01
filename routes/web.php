@@ -29,7 +29,7 @@ use Illuminate\Support\Facades\Artisan;
 
 Route::group(['middleware' => ['installed']], function () {
     Route::group(['middleware' => ['frontend']], function () {
-        Route::get('/', [FrontendController::class, 'index'])->name('/');
+        Route::get('/home', [FrontendController::class, 'index'])->name('/');
         Route::get('/publications', [FrontendController::class, 'publications'])->name('publications');
         Route::get('/events', [FrontendController::class, 'events'])->name('events');
         Route::get('/about', [FrontendController::class, 'about'])->name('about');
