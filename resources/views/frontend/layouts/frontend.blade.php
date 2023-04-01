@@ -50,14 +50,14 @@
 							</div>
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
-									<li class="active"><a href="#">Home</a></li>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="blog.html">Publications</a></li>
-									<li><a href="course.html">Partners</a></li>
-									<li><a href="#">Events</a></li>
-									<li><a href="contact.html">Contact</a></li>
+									<li class="active"><a href="{{ url('/') }}">Home</a></li>
+									<li><a href="{{ route('about') }}">About Us</a></li>
+									<li><a href="{{ route('publications') }}">Publications</a></li>
+									<li><a href="{{ route('partners') }}">Partners</a></li>
+									<li><a href="{{ route('events') }}">Events</a></li>
+									<li><a href="{{ route('contact') }}">Contact</a></li>
 								</ul>
-								<div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
+								<!-- <div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div> -->
 
 								<!-- Hamburger -->
  
@@ -103,13 +103,12 @@
 		</div>
 		<nav class="menu_nav">
 			<ul class="menu_mm">
-				<li class="menu_mm"><a href="index.html">Home</a></li>
-				<li class="menu_mm"><a href="#">About</a></li>
-				<li class="menu_mm"><a href="#">About Us</a></li>
-				<li class="menu_mm"><a href="#">Publications</a></li>
-				<li class="menu_mm"><a href="#">Partners</a></li>
-				<li class="menu_mm"><a href="#">Events</a></li>
-				<li class="menu_mm"><a href="#">Contact</a></li>
+				<li class="menu_mm"><a href="{{ url('/') }}">Home</a></li>
+				<li class="menu_mm"><a href="{{ route('about') }}">About</a></li>
+				<li class="menu_mm"><a href="{{ route('publications') }}">Publications</a></li>
+				<li class="menu_mm"><a href="{{ route('partners') }}">Partners</a></li>
+				<li class="menu_mm"><a href="{{ route('events') }}">Events</a></li>
+				<li class="menu_mm"><a href="{{ route('contact') }}">Contact</a></li>
 			</ul>
 		</nav>
 	</div>

@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use Illuminate\Http\Request;
 
 class FrontendController extends Controller{ 
 
@@ -17,7 +18,7 @@ class FrontendController extends Controller{
     }
 
 
-    public function aboutus()
+    public function about()
     { 
         return view('frontend.home-page');
     }
@@ -35,6 +36,25 @@ class FrontendController extends Controller{
         return view('frontend.publications', compact('publications'));
     }
 
+    public function posts()
+    { 
+        $publications = Post::where('cat_id', 2)->orderBy('id', 'desc')->get();
+        return view('frontend.publications', compact('publications'));
+    }
+
+    public function show(Request $request, $id)
+    {
+        $postDetails = Post::find($id);
+        
+        if ($postDetails) {
+        $postDetail  = Post::where('id', $postDetails->id)->first(); 
+
+            return view('frontend.post-detail', compact('postDetails'));
+        } else {            
+            return redirect('/');
+        }
+    }
+
 
     public function events()
     { 
@@ -46,34 +66,5 @@ class FrontendController extends Controller{
     public function contact()
     { 
         return view('frontend.home-page');
-    }
-    
-    // public function changeStatus($status, $token)
-    // {
-    //     try {
-    //         $data =  $this->jwtTokenService->jwtTokenDecode($token);
-    //         if (auth()->user()) {
-    //             $this->jwtTokenService->changeStatus($data->visitorID, $status);
-    //             return redirect()->route('admin.dashboard.index')->withSuccess('The Status Change successfully!');
-    //         } else {
-    //             $result = User::findorFail($data->employee_user_id);
-    //             if ($result) {
-    //                 Auth::login($result);
-    //                 $this->jwtTokenService->changeStatus($data->visitorID, $status);
-    //                 return redirect()->route('admin.dashboard.index')->withSuccess('The Status Change successfully!');
-    //             } else {
-    //                 return redirect()->route('/')->withError('These credentials do not match our records');
-    //             }
-    //         }
-    //     } catch (\Exception $e) {
-    //         //
-    //     }
-    // }
-
-    // public function qrcode($number)
-    // {
-    //     $visitor = Visitor::select('barcode')->where('phone',$number)->first();
-
-    //     return view('frontend.check-in.qrcode',compact('visitor'));
-    // }
+    }     
 }

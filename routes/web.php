@@ -1,9 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CheckInController;
-use App\Http\Controllers\CheckoutController;
+use Illuminate\Support\Facades\Route; 
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Auth\LoginController;
@@ -26,6 +24,20 @@ use App\Http\Controllers\Admin\WebNotificationController;
 use App\Http\Controllers\Admin\AttendanceReportController;
 use App\Http\Controllers\Admin\PreRegistersReportController;
 use Illuminate\Support\Facades\Artisan;
+ 
+/*Multi step form*/
+
+Route::group(['middleware' => ['installed']], function () {
+    Route::group(['middleware' => ['frontend']], function () {
+        Route::get('/', [FrontendController::class, 'index'])->name('/');
+        Route::get('/publications', [FrontendController::class, 'publications'])->name('publications');
+        Route::get('/events', [FrontendController::class, 'events'])->name('events');
+        Route::get('/about', [FrontendController::class, 'about'])->name('about');
+        Route::get('/partners', [FrontendController::class, 'about'])->name('partners');
+        Route::get('/contact', [FrontendController::class, 'about'])->name('contact');
+        Route::get('/post-detail/{id}', [FrontendController::class, 'show'])->name('post-detail');
+    });
+}); 
 
 Route::get('/clear-cache', function () {
    Artisan::call('cache:clear');
@@ -136,45 +148,3 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'installed', 'backen
         Route::post('whatsapp', [SettingController::class, 'whatsappSettingupdate'])->name('whatsapp-message-update');
     });
 });
-
-
-
-/*Multi step form*/
-
-Route::group(['middleware' => ['installed']], function () {
-    Route::group(['middleware' => ['frontend']], function () {
-
-        Route::get('/', [FrontendController::class, 'index'])->name('/');
-        Route::get('/publications', [FrontendController::class, 'publications'])->name('publications');
-        Route::get('/events', [FrontendController::class, 'events'])->name('events');
-        // Route::get('/home', [CheckInController::class, 'index'])->name('home');
-
-        // Route::get('/scanqr', [CheckInController::class, 'scanQr'])->name('check-in.scan-qr');
-
-        // Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout.index');
-
-        // Route::post('/checkout', [CheckoutController::class, 'getVisitor'])->name('checkout.index');
-
-        // Route::get('/checkout/update/{visitingDetails}', [CheckoutController::class, 'update'])->name('checkout.update');
-
-        // Route::get('/check-in', [CheckInController::class, 'index'])->name('check-in');
-        // Route::get('/check-in/create-step-one', [CheckInController::class, 'createStepOne'])->name('check-in.step-one');
-        // Route::post('/check-in/create-step-one', [CheckInController::class, 'postCreateStepOne'])->name('check-in.step-one.next');
-        // Route::get('/check-in/create-step-two', [CheckInController::class, 'createStepTwo'])->name('check-in.step-two');
-        // Route::post('/check-in/create-step-two', [CheckInController::class, 'store'])->name('check-in.step-two.next');
-        
-        // Route::get('/check-in/show/{id}', [CheckInController::class, 'show'])->name('check-in.show');
-        // Route::get('/check-in/return', [CheckInController::class, 'visitor_return'])->name('check-in.return');
-        // Route::post('/check-in/return', [CheckInController::class,'find_visitor'])->name('check-in.find.visitor');
-
-        // Route::get('/check-in/pre-registered', [CheckInController::class, 'pre_registered'])->name('check-in.pre.registered');
-        // Route::post('/check-in/pre-registered', [CheckInController::class, 'find_pre_visitor'])->name('check-in.find.pre.visitor');
-
-        // Route::get('check-in/visitor-details/{visitorPhone}', [CheckInController::class, 'visitorDetails'])->name('checkin.visitor-details');
-        // Route::get('check-in/pre-registered/visitor-details/{visitorPhone}', [CheckInController::class, 'preVisitorDetails'])->name('checkin.pre-visitor-details');
-    });
-});
-
-// Route::get('visitor/change-status/{status}/{token}',  [FrontendController::class, 'changeStatus']);
-
-// Route::get('qrcode/{number}',  [FrontendController::class, 'qrcode'])->name('qrcode');

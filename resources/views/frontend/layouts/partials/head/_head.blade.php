@@ -15,4 +15,5 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/responsive.css')  }}">  
 <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/courses.css')  }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/courses_responsive.css')  }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/blog_single.css')  }}"> 
 </head>

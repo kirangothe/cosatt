@@ -120,7 +120,7 @@
 									<div class="course_text">
 										<p>{{ Str::limit($row->summary,100) }}</p> 
 									</div> 
-									<div class="courses_button trans_200"><a href="#">read more</a></div> 
+									<div class="courses_button trans_200"><a href="{{ route('post-detail/'.$$row->id) }}">read more</a></div> 
 								</div>						 
 							</div>
 						</div>
@@ -176,7 +176,7 @@
 										<p>{{ Str::limit($row->summary,100) }}</p>
 									</div>
 								</div>
-								<div class="courses_button trans_200"><a href="#">read more</a></div> 
+								<div class="courses_button trans_200"><a href="{{ url('post-detail/'.$row->id) }}">read more</a></div> 
 							</div>
 						</div>
 					</div>

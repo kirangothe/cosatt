@@ -59,25 +59,57 @@
 			<div class="row">
 				<div class="col">
 					<div class="partners_slider_container">
-						<div class="owl-carousel owl-theme partners_slider">
-
-							<!-- Partner Item -->
-							<div class="owl-item partner_item"><img src="images/partner_1.png" alt=""></div>
-
-							<!-- Partner Item -->
-							<div class="owl-item partner_item"><img src="images/partner_2.png" alt=""></div>
-
-							<!-- Partner Item -->
-							<div class="owl-item partner_item"><img src="images/partner_3.png" alt=""></div>
-
-							<!-- Partner Item -->
-							<div class="owl-item partner_item"><img src="images/partner_4.png" alt=""></div>
-
-							<!-- Partner Item -->
-							<div class="owl-item partner_item"><img src="images/partner_5.png" alt=""></div>
-
-							<!-- Partner Item -->
-							<div class="owl-item partner_item"><img src="images/partner_6.png" alt=""></div>
+						<div class="owl-carousel owl-theme partners_slider"> 
+							<div class="owl-item partner_item">
+								<a href="http://www.bipss.org.bd/" target="blank">
+									<img src="{{ asset('images/partners/bipss.jpg') }}" title="BIPSS" alt="">
+								</a>
+							</div>
+							<div class="owl-item partner_item">
+								<a href="http://www.kas.de/politikdialog-asien/en/" target="blank">
+									<img src="{{ asset('images/partners/KAS.jpg') }}" title="BIPSS" alt="">
+								</a>
+							</div>
+							<div class="owl-item partner_item">
+								<a href="http://rcss.org/" target="blank">
+									<img src="{{ asset('images/partners/rcss.jpg') }}" title="BIPSS" alt="">
+								</a>
+							</div>
+							<div class="owl-item partner_item">
+								<a href="https://www.lki.lk/" target="blank">
+									<img src="{{ asset('images/partners/kadirgamar.jpg') }}" title="BIPSS" alt="">
+								</a>
+							</div>
+							<div class="owl-item partner_item">
+								<a href="http://www.insssl.lk/insssl.php" target="blank">
+									<img src="{{ asset('images/partners/INSSSL.jpg') }}" title="BIPSS" alt="">
+								</a>
+							</div>
+							<div class="owl-item partner_item">
+								<a href="https://www.isas.nus.edu.sg/Pages/home.aspx" target="blank">
+									<img src="{{ asset('images/partners/isaslogo333.jpg') }}" title="BIPSS" alt="">
+								</a>
+							</div>
+							<div class="owl-item partner_item">
+								<a href="https://www.cosatt.org" target="blank">
+									<img src="{{ asset('images/partners/COSATT_logo.JPG') }}" title="BIPSS" alt="">
+								</a>
+							</div>
+							<div class="owl-item partner_item">
+								<a href="http://www.afghanjustice.org" target="blank">
+									<img src="{{ asset('images/partners/ajo.JPG') }}" title="BIPSS" alt="">
+								</a>
+							</div>
+							<div class="owl-item partner_item">
+								<a href="http://www.biiss.org/" target="blank">
+									<img src="{{ asset('images/partners/bliss.jpg') }}" title="BIPSS" alt="">
+								</a>
+							</div>
+							<div class="owl-item partner_item">
+								<a href="http://www.bhutanstudies.org.bt" target="blank">
+									<img src="{{ asset('images/partners/CBS.JPG') }}" title="BIPSS" alt="">
+								</a>
+							</div>
 
 						</div>
 					</div>
@@ -142,12 +174,11 @@
 									<div class="footer_title">Contact Us</div>
 									<div class="footer_links_container">
 										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="about.html">About</a></li>
-											<li><a href="contact.html">Contact</a></li>
-											<li><a href="#">Publications</a></li>
-											<li><a href="courses.html">Events</a></li>
-											<li><a href="#">Events</a></li>  
+											<li><a href="{{ url('/') }}">Home</a></li>
+											<li><a href="{{ route('about') }}">About</a></li>
+											<li><a href="{{ route('publications') }}">Publications</a></li>
+											<li><a href="{{ route('events') }}">Events</a></li>
+											<li><a href="{{ route('contact') }}">Contact</a></li>  
 										</ul>
 									</div>
 								</div>
