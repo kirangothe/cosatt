@@ -25,37 +25,7 @@
 {
 	color: #14bdee;
 }
-
-/*********************************
-4. Menu
-*********************************/
  
-/*********************************
-5. Section
-*********************************/
-
-.section_title_container
-{
-	max-width: 600px;
-	margin: 0 auto;
-}
-.section_title
-{
-	line-height: 0.75;
-}
-.section_subtitle
-{
-	line-height: 1.85;
-	margin-top: 22px;
-}
-.section_background
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 
 /*********************************
 6. Home

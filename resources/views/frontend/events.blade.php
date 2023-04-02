@@ -1,6 +1,6 @@
 @extends('frontend.layouts.frontend')
 @section('content')
-	<div class="home">
+	<div class="home-generic">
 		<div class="breadcrumbs_container">
 			<div class="container">
 				<div class="row">
@@ -8,7 +8,7 @@
 						<div class="breadcrumbs">
 							<ul>
 								<li><a href="#">Home</a></li>
-								<li>Events</li>
+								<li>Publications</li>
 							</ul>
 						</div>
 					</div>
@@ -35,9 +35,10 @@
 							<div class="course">
 								<div class="course_image"><img src="{{ url('images/news/image/'.$row->image) }}" alt=""></div>
 								<div class="course_body">
-									<h3 class="course_title"><a href="course.html">{{ Str::limit($row->title,45) }}</a></h3> 
+									<h3 class="course_title"><a href="{{ url('post-detail/'.$row->id) }}">{!! Str::limit($row->title,45) !!}</a></h3>
+									<!-- <div class="course_teacher">Mr. John Taylor</div> -->
 									<div class="course_text">
-										<p>{{ Str::limit($row->summary,100) }}</p> 
+										<p>{!! Str::limit($row->summary,100) !!}</p> 
 									</div> 
 									<div class="courses_button trans_200"><a href="{{ url('post-detail/'.$row->id) }}">read more</a></div> 
 								</div>						 

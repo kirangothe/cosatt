@@ -21,21 +21,17 @@
 
 	<!-- Blog -->
 
-	<div class="blog">
+	<div class="features">
 		<div class="container">
 			<div class="row">				
-				<div class="col-lg-12">
-					<div class="blog_content">
-						<div class="blog_title">{!! $postDetails->title !!}</div>
-						<!-- <div class="blog_meta">
-							<ul>
-								<li>Post on <a href="#">May 5, 2018</a></li>
-								<li>By <a href="#">admin</a></li>
-							</ul>
-						</div> -->
-						<div class="blog_image"><img src="{{ url('images/news/image/'.$postDetails->image) }}" alt=""></div>
-						<p>{!! $postDetails->descrip !!}</p>
-					</div>  
+				<div class="col-lg-12"> 
+						<div class="section_title_container text-center"> 
+							<h2 class="section_title">{!! $postDetails->title !!}</h2>
+							<div class="blog_image"><img src="{{ url('images/news/image/'.$postDetails->image) }}" alt=""></div> 
+							<div class="section_subtitle">
+							<p>{!! $postDetails->descrip !!}</p> 
+							</div>					
+						</div>
 				</div>
 				
 			</div>
