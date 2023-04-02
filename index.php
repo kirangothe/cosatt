@@ -70,11 +70,11 @@
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
 									<li class="active"><a href="#">Home</a></li>
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Publications</a></li>
-									<li><a href="#">Partners</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="blog.html">Publications</a></li>
+									<li><a href="course.html">Partners</a></li>
 									<li><a href="#">Events</a></li>
-									<li><a href="#">Contact</a></li>
+									<li><a href="contact.html">Contact</a></li>
 								</ul>
 								<div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
 
@@ -606,9 +606,10 @@
 			<div class="row copyright_row" style="color:#fff;">
 				<div class="col">
 					<div class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
-						<div class="cr_text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <a href="https://isnp.com.np" target="_blank">Intellisoft Nepal Pvt. Ltd</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+						<div class="cr_text">
+		Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  
+		<a href="https://isnp.com.np" target="_blank">Intellisoft Nepal Pvt. Ltd</a>
+					</div>
 						<div class="ml-lg-auto cr_links">
 							<ul class="cr_list">
 								<li><a href="#">Copyright notification</a></li>
