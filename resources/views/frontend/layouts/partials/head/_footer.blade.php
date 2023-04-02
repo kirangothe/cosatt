@@ -1,5 +1,5 @@
 <div class="counter">
-		<div class="counter_background" style="background-image:url(images/counter_background.jpg)"></div>
+		<div class="counter_background"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
@@ -120,7 +120,7 @@
 
 	<!-- Footer -->
 	<footer class="footer">
-		<div class="footer_background" style="background-image:url(images/footer_background.png)"></div>
+		<div class="footer_background"></div>
 		<div class="container">
 			<div class="row footer_row">
 				<div class="col">

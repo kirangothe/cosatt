@@ -25,19 +25,6 @@ use App\Http\Controllers\Admin\AttendanceReportController;
 use App\Http\Controllers\Admin\PreRegistersReportController;
 use Illuminate\Support\Facades\Artisan;
  
-/*Multi step form*/
-
-Route::group(['middleware' => ['installed']], function () {
-    Route::group(['middleware' => ['frontend']], function () {
-        Route::get('/home', [FrontendController::class, 'index'])->name('/');
-        Route::get('/publications', [FrontendController::class, 'publications'])->name('publications');
-        Route::get('/events', [FrontendController::class, 'events'])->name('events');
-        Route::get('/about', [FrontendController::class, 'about'])->name('about');
-        Route::get('/partners', [FrontendController::class, 'about'])->name('partners');
-        Route::get('/contact', [FrontendController::class, 'about'])->name('contact');
-        Route::get('/post-detail/{id}', [FrontendController::class, 'show'])->name('post-detail');
-    });
-}); 
 
 Route::get('/clear-cache', function () {
    Artisan::call('cache:clear');
@@ -148,3 +135,17 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'installed', 'backen
         Route::post('whatsapp', [SettingController::class, 'whatsappSettingupdate'])->name('whatsapp-message-update');
     });
 });
+
+/*Multi step form*/
+
+Route::group(['middleware' => ['installed']], function () {
+    Route::group(['middleware' => ['frontend']], function () {
+        Route::get('/', [FrontendController::class, 'index'])->name('/');
+        Route::get('/publications', [FrontendController::class, 'publications'])->name('publications');
+        Route::get('/events', [FrontendController::class, 'events'])->name('events');
+        Route::get('/about', [FrontendController::class, 'about'])->name('about');
+        Route::get('/partners', [FrontendController::class, 'about'])->name('partners');
+        Route::get('/contact', [FrontendController::class, 'about'])->name('contact');
+        Route::get('/post-detail/{id}', [FrontendController::class, 'show'])->name('post-detail');
+    });
+}); 
