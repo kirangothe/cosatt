@@ -84,7 +84,7 @@
 			</div>
 			<div class="row">
 				<div class="col">
-					<div class="courses_button trans_200"><a href="#">read more</a></div>
+					<div class="courses_button trans_200"><a href="{{ route('about') }}">read more</a></div>
 				</div>
 			</div>
 		</div>
