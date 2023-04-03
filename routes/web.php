@@ -144,8 +144,8 @@ Route::group(['middleware' => ['installed']], function () {
         Route::get('/publications', [FrontendController::class, 'publications'])->name('publications');
         Route::get('/events', [FrontendController::class, 'events'])->name('events');
         Route::get('/about', [FrontendController::class, 'about'])->name('about');
-        Route::get('/partners', [FrontendController::class, 'about'])->name('partners');
-        Route::get('/contact', [FrontendController::class, 'about'])->name('contact');
+        Route::get('/partners', [FrontendController::class, 'partners'])->name('partners');
+        Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
         Route::get('/post-detail/{id}', [FrontendController::class, 'show'])->name('post-detail');
     });
 }); 

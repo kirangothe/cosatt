@@ -760,6 +760,42 @@ section
 	height: 100%;
 }
 
+
+/*partner page tab menu*/
+.tab-menu-content {
+    margin-bottom: 25px;
+}
+.tab-heading {
+    background: #f1f1f1;
+}
+#tabs .tab-heading ul li:last-child a {
+    border: none;
+}
+#tabs .tab-heading ul li a {
+    color: #444;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 13px;
+    border-bottom: 1px solid #ccc;
+}
+#tabs .tab-heading ul li a:hover, #tabs .tab-heading ul li a.current {
+    background: #065CB0;
+    transition: background ease-in-out 0.1s;
+    -webkit-transition: background ease-in-out 0.1s;
+    color: #fff;
+    border-bottom:1px solid #065CB0;
+}
+#tabs h2 {
+	padding-bottom:15px;
+    color: #065CB0;
+	font-size: 24px;
+}
+#tabs p {
+    line-height: 24px;
+}
+
 /*********************************
 6. Home
 *********************************/

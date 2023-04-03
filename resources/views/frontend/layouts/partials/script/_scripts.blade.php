@@ -13,6 +13,19 @@
 <script src="{{ asset('frontend/plugins/colorbox/jquery.colorbox-min.js') }}"></script>
 <script src="{{ asset('frontend/js/custom.js') }}"></script> 
 <script src="{{ asset('frontend/js/about.js') }}"></script> 
+<script src="{{ asset('frontend/js/jquery-ui.js') }}"></script> 
+<script>
+  $( function() {
+    $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+    $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+  } );
+/*for active current tab content*/
+$('#tabs li a').on('click', function(){
+    $(this).addClass('current');
+    $(this).parent().siblings().find('a').removeClass('current');
+});
+  
+</script>
 
 <!-- Scripts -->
 @yield('scripts')

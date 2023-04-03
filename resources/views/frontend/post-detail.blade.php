@@ -8,8 +8,8 @@
 					<div class="col">
 						<div class="breadcrumbs">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="blog.html">{{ $postDetails->cat_id == 1 ? 'Events' : 'Publications'   }}</a></li>
+								<li><a href="route('/')">Home</a></li>
+								<li><a href="@if($postDetails->cat_id == 1) {{ route('events') }} @else {{ route('publications') }} @endif">{{ $postDetails->cat_id == 1 ? 'Events' : 'Publications'   }}</a></li>
 								<li>Detail</li>
 							</ul>
 						</div>
@@ -30,6 +30,10 @@
 							<div class="blog_image"><img src="{{ url('images/news/image/'.$postDetails->image) }}" alt=""></div> 
 							<div class="section_subtitle">
 							<p>{!! $postDetails->descrip !!}</p> 
+							@if($postDetails->file)
+                            	Download file for more information : 
+									<a href="{{ url('images/news/file/'.$postDetails->file) }}" target="_blank">{!! $postDetails->filename !!}</a>
+							@endif
 							</div>					
 						</div>
 				</div>

@@ -26,7 +26,7 @@ class FrontendController extends Controller{
 
     public function partners()
     { 
-        return view('frontend.home-page');
+        return view('frontend.partners');
     }
 
 
@@ -65,6 +65,6 @@ class FrontendController extends Controller{
 
     public function contact()
     { 
-        return view('frontend.home-page');
+        return view('frontend.contact');
     }     
 }

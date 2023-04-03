@@ -138,10 +138,10 @@
 									</div>
 									<div class="footer_social">
 										<ul>
-											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="https://www.facebook.com/cosattsouthasia/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<!-- <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> -->
+											<li><a href="https://www.instagram.com/costt3/" target="_blank">><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+											<!-- <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
 										</ul>
 									</div>
 								</div>
@@ -174,6 +174,7 @@
 											<li><a href="{{ route('about') }}">About</a></li>
 											<li><a href="{{ route('publications') }}">Publications</a></li>
 											<li><a href="{{ route('events') }}">Events</a></li>
+											<li><a href="{{ route('partners') }}">Partners</a></li>
 											<li><a href="{{ route('contact') }}">Contact</a></li>  
 										</ul>
 									</div>
@@ -193,13 +194,13 @@
 		Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  
 		<a href="https://isnp.com.np" target="_blank">Intellisoft Nepal Pvt. Ltd</a>
 					</div>
-						<div class="ml-lg-auto cr_links">
+						<!-- <div class="ml-lg-auto cr_links">
 							<ul class="cr_list">
 								<li><a href="#">Copyright notification</a></li>
 								<li><a href="#">Terms of Use</a></li>
 								<li><a href="#">Privacy Policy</a></li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

@@ -145,17 +145,16 @@
 						<h2 class="section_title">Events</h2>
 						<!-- <div class="section_subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida arcu. Vestibulum feugiat, sapien ultrices fermentum congue, quam velit venenatis sem</p></div> -->
 						<div class="row">
-			<div class="col">
-				<div class="courses_button trans_200"><a href="{{ route('events') }}">view all events</a></div>
-			</div>
-		</div>
+							<div class="col">
+								<div class="courses_button trans_200"><a href="{{ route('events') }}">view all events</a></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row events_row">
-
-			@if($events) 
-					@foreach($events as $row)
+				@if($events) 
+				@foreach($events as $row)
 				<div class="col-lg-4 event_col">
 					<div class="event event_left">
 						<div class="event_image"><img src="{{ url('images/news/image/'.$row->image) }}" alt=""></div>

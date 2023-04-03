@@ -7,8 +7,8 @@
 					<div class="col">
 						<div class="breadcrumbs">
 							<ul>
-								<li><a href="#">Home</a></li>
-								<li>Publications</li>
+							<li><a href="{{ route('/') }}">Home</a></li>
+							<li><a href="{{ route('publications') }}">Publications </a></li>
 							</ul>
 						</div>
 					</div>
