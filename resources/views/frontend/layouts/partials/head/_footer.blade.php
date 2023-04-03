@@ -78,7 +78,7 @@
 							</div>
 							<div class="owl-item partner_item">
 								<a href="http://www.insssl.lk/insssl.php" target="blank">
-									<img src="{{ asset('images/partners/INSSSL.jpg') }}" title="BIPSS" alt="">
+									<img src="{{ asset('images/partners/INSSSL.png') }}" title="BIPSS" alt="">
 								</a>
 							</div>
 							<div class="owl-item partner_item">
@@ -98,7 +98,7 @@
 							</div>
 							<div class="owl-item partner_item">
 								<a href="http://www.biiss.org/" target="blank">
-									<img src="{{ asset('images/partners/bliss.jpg') }}" title="BIPSS" alt="">
+									<img src="{{ asset('images/partners/biiss.jpg') }}" title="BIPSS" alt="">
 								</a>
 							</div>
 							<div class="owl-item partner_item">
