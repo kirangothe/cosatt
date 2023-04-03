@@ -803,7 +803,7 @@ section
 .home
 {
 	width: 100%;
-	height: 650px;
+	height: 580px;
 }
 
 .home-generic{
@@ -826,7 +826,7 @@ section
 .home_slider_background
 {
 	position: absolute;
-	top: 0;
+	top: 57;
 	left: 0;
 	width: 100%;
 	height: 100%;

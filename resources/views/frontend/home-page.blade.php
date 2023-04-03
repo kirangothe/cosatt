@@ -6,13 +6,17 @@
 			
 			<!-- Home Slider -->
 			<div class="owl-carousel owl-theme home_slider"> 
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/banner/16.jpg)"></div>					 
+				</div> 
+			<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/banner/15.jpg)"></div> 
+				</div>
 				
 			<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/banner/4.jpg)"></div>					 
 				</div> 
-				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/banner/1.jpg)"></div>					 
-				</div> 
+				
 				<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/banner/2.jpg)"></div> 
 				</div> 
@@ -22,15 +26,16 @@
 				<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/banner/5.jpg)"></div> 
 				</div> 
-				<div class="owl-item">
+				<!-- <div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/banner/6.jfif)"></div> 
-				</div> 
-				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/banner/8.jpg)"></div> 
-				</div> 
+				</div>  -->
+			
 				<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/banner/9.jpg)"></div> 
 				</div>
+				<!-- <div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/banner/1.jpg)"></div>					 
+				</div>  -->
 				<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/banner/10.jpg)"></div>					 
 				</div> 
@@ -41,26 +46,24 @@
 					<div class="home_slider_background" style="background-image:url(images/banner/12.jpg)"></div> 
 				</div>
 				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/banner/8.jpg)"></div> 
+				</div> 
+				<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/banner/13.jpg)"></div>					 
 				</div> 
 				<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/banner/14.jpg)"></div> 
 				</div> 
-				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/banner/15.jpg)"></div> 
-				</div>
-				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/banner/16.jpg)"></div>					 
-				</div> 
+				
 				<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/banner/17.jpg)"></div> 
 				</div> 
 				<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/banner/18.jpg)"></div> 
 				</div>
-				<div class="owl-item">
+				<!-- <div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/banner/19.jpg)"></div> 
-				</div>
+				</div> -->
 				<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/banner/20.jpg)"></div>					 
 				</div> 
